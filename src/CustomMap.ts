@@ -3,7 +3,7 @@
 export class CustomMap {
   private googleMap: google.maps.Map;
 
-  constructor(mapId) {
+  constructor(mapId: HTMLElement) {
     this.googleMap = new google.maps.Map(mapId, {
       zoom: 1,
       center: {
