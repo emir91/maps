@@ -1,4 +1,4 @@
-/// <reference types="@types/google.maps" />
+import { CustomMap } from "./CustomMap";
 // import { User } from "./User";
 // import { Company } from "./Company";
 
@@ -13,10 +13,4 @@
 const mapRef = document.getElementById("map");
 const mapEl: HTMLElement = mapRef as HTMLElement;
 
-new google.maps.Map(mapEl, {
-  zoom: 1,
-  center: {
-    lat: 0,
-    lng: 0,
-  },
-});
+const map = new CustomMap(mapEl);
