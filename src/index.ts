@@ -1,6 +1,6 @@
-import { CustomMap } from "./CustomMap";
-import { User } from "./User";
-import { Company } from "./Company";
+import { CustomMap } from "./entities/CustomMap";
+import { User } from "./entities/User";
+import { Company } from "./entities/Company";
 
 const user = new User();
 const company = new Company();
